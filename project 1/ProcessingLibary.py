@@ -36,7 +36,7 @@ class WordFrequencyAnalyzer:
         return mostCommon  
 
     #return the frequency of a specified word
-    def calculate_frequency_for_word(self,text, word):
+    def calculate_frequency_for_word(self, text, word):
         count = text.lower().split().count(word)
         return count
 
