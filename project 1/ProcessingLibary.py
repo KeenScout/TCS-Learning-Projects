@@ -14,7 +14,6 @@ class WordFrequency:
             continue
         break
 
-    
     #getting a postive integer from the user
     while True:
         try:
