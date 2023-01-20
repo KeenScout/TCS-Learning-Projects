@@ -54,7 +54,6 @@ if __name__ == '__main__':
     userword = WordFrequency.word
     n = WordFrequency.frequency
 
-
     #printing the highest frequency word
     print("\nThe most common word in the text is: {}\n".format(WordFrequencyAnalyzer().calculate_highest_frequency(text)))
     #printing how many times a word was found
