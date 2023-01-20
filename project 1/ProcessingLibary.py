@@ -26,6 +26,7 @@ class WordFrequency:
             print("please enter a integer.\n")
             continue
 
+
 class WordFrequencyAnalyzer:
     # Return the highest frequency found in the text
     def calculate_highest_frequency(self, text):
@@ -45,7 +46,6 @@ class WordFrequencyAnalyzer:
         count = Counter(sorted(text))
         NFrequentlyencountered = count.most_common(n)
         return NFrequentlyencountered           
-
 
 
 if __name__ == '__main__':
