@@ -3,10 +3,10 @@ import string
 
 
 class WordFrequency:
-    #getting blok of text form the user
+    # getting block of text form the user
     text = input("Please provide a text:\n")
 
-    #getting the word that they would like to know the frequency of from the user
+    # getting the word that they would like to know the frequency of from the user
     while True:
         word = str(input("Please provide a word for which you want to know the frequency:\n"))
         if word.lower() not in text.lower():
@@ -14,12 +14,12 @@ class WordFrequency:
             continue
         break
 
-    #getting a postive integer from the user
+    # getting a positive integer from the user
     while True:
         try:
-            frequency = int(input("please provide the desired lenght of the list you want:\n"))
+            frequency = int(input("please provide the desired length of the list you want:\n"))
             if frequency <0:
-                print("please enter a postive integer\n.")
+                print("please enter a positive integer\n.")
                 continue 
             break
         except ValueError:
@@ -35,12 +35,12 @@ class WordFrequencyAnalyzer:
         mostCommon = count.most_common(1)
         return mostCommon  
 
-    #return the frequency of a specified word
+    # return the frequency of a specified word
     def calculate_frequency_for_word(self, text, word):
         count = text.lower().split().count(word)
         return count
 
-    #return a list of the most frequent N words
+    # return a list of the most frequent N words
     def calculate_most_frequent_n_words(text, n):
         text = text.split()
         count = Counter(sorted(text))
@@ -54,10 +54,10 @@ if __name__ == '__main__':
     userword = WordFrequency.word
     n = WordFrequency.frequency
 
-    #printing the highest frequency word
+    # printing the highest frequency word
     print("\nThe most common word in the text is: {}\n".format(WordFrequencyAnalyzer().calculate_highest_frequency(text)))
-    #printing how many times a word was found
+    # printing how many times a word was found
     print("the word {} was found {} times\n".format(userword, WordFrequencyAnalyzer().calculate_frequency_for_word(text, userword)))
-    #printing the list 
+    # printing the list
     print("List of the {} most common words in the text:".format(n))
     print("{}\n".format(WordFrequencyAnalyzer.calculate_most_frequent_n_words(text, n)))
