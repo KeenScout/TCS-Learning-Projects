@@ -16,8 +16,8 @@ def calculate_frequency_for_word(text, word):
 
 # return a list of the most frequent N words
 def calculate_most_frequent_n_words(text, n):
-    text = text.lower().split()
-    count = Counter(sorted(text))
+    text_altered = text.lower().split()
+    count = Counter(sorted(text_altered))
     n_frequently_encountered = count.most_common(n)
     return n_frequently_encountered
 
