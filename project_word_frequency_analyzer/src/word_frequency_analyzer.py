@@ -20,7 +20,3 @@ def calculate_most_frequent_n_words(text, n):
     count = Counter(sorted(text_altered))
     n_frequently_encountered = count.most_common(n)
     return n_frequently_encountered
-
-
-if __name__ == '__main__':
-    print("hi")
