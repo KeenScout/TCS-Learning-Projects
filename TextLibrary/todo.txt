@@ -1,0 +1,4 @@
+# classes > raise the correct exceptions >
+# make tests to see if the correct exception is raised > doc strings.
+# open just the folder.
+# git ignore
